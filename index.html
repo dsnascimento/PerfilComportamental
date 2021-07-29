@@ -5,351 +5,345 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste de Perfil Comportamental</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilo.css">
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/">
 </head>
 
 <body class="bg-white bg-gradient">
 
-    <div class="col-8">
-        <center> <H3>Preencha as lacunas abaixo com números de 1 a 4, na HORIZONTAL, sendo:1 o que
-            menos se identifica e 4 o que mais se identifica:</H3> </center>
-    </div>
-    <div class="container">
 
-        <form action="calcular.php" method="post">
-            <table name="tabela" class="table table-sm table-dark table-striped mt-4">
-                <style>
-                    #row1,
-                    #row2,
-                    #row3,
-                    #row4,
-                    #row5,
-                    #row6,
-                    #row7,
-                    #row8,
-                    #row9,
-                    #row10,
-                    #row11,
-                    #row12 {
-                        width: 100px;
-                        height: 100px;
-                    }
+<div class="container">
 
-                    #col1,
-                    #col2,
-                    #col3,
-                    #col4 {
-                        height: 50px;
-                    }
-                    #input {
-                        width: 100px;
-                        height: 100px;
-                    }
-                </style>
-                <!--ROW - 1-->
-                <center>
-                    <tr>
-                        <!--COL - 1-->
-                        <td id="row1" name="row1">
-                            <input type="number" class="col1" id="a1" name="a1" min="1" max="4">
-                            <li> Autoconfiante</li>
-                            <li> Idependente</li>
-                            <li> Dominante</li>
-                        </td>
-                        <!--COL - 2-->
-                        <td id="row2">
-                            <input type="number" name="b1" id="b1" min="1" max="4">
-                            <li> Autodisciplinado</li>
-                            <li> Atento à detalhes</li>
-                            <li> Diligente</li>
-                        </td>
-                        <!--COL - 3-->
-                        <td id="row3">
-                            <input type="number" name="c1" id="c1" min="1" max="4">
-                            <li> Acolhedor</li>
-                            <li> Amigável</li>
-                            <li> Paciente</li>
-                        </td>
-                        <!--COL - 4-->
-                        <td id="row4">
-                            <input type="number" name="d1" id="d1" min="1" max="4">
-                            <li> Comunicativo</li>
-                            <li> Alegre</li>
-                            <li> Extrovertido</li>
-                        </td>
-                    </tr>
-                    <!--ROW - 2-->
-                    <tr>
-                        <!--COL - 1-->
-                        <td id="row5">
-                            <input type="number" class="col1" name="a2" id="a2" min="1" max="4">
-                            <li> Proativo</li>
-                            <li> Empreededor</li>
-                            <li> Corajoso</li>
-                        </td>
-                        <!--COL - 2-->
-                        <td id="row6">
-                            <input type="number" name="b2" min="1" max="4">
-                            <li> Criterioso</li>
-                            <li> Cuidadoso</li>
-                            <li> Especialista</li>
-                        </td>
-                        <!--COL - 3-->
-                        <td id="row7">
-                            <input type="number" name="c2" min="1" max="4">
-                            <li> Agradável</li>
-                            <li> Tranquilo</li>
-                            <li> Organizado</li>
-                        </td>
-                        <!--COL - 4-->
-                        <td id="row8">
-                            <input type="number" name="d2" min="1" max="4">
-                            <li> Participativo</li>
-                            <li> Relacional</li>
-                            <li> Flexível</li>
-                        </td>
-                    </tr>
-                    <!--ROW - 3-->
-                    <tr>
-                        <!--COL - 1-->
-                        <td id="row9">
-                            <input type="number" name="a3" id="a3" min="1" max="4">
-                            <li> Prático</li>
-                            <li> Rápido</li>
-                            <li> Eficiente</li>
-                        </td>
-                        <!--COL - 2-->
-                        <td id="row10">
-                            <input type="number" name="b3" id="b3" min="1" max="4">
-                            <li> Idealizador</li>
-                            <li> Perfeccionista</li>
-                            <li> Uniforme</li>
-                        </td>
-                        <!--COL - 3-->
-                        <td id="row11">
-                            <input type="number" name="c3" id="c3" min="1" max="4">
-                            <li> Calmo</li>
-                            <li> Rotineiro</li>
-                            <li> Constante</li>
-                        </td>
-                        <!--COL - 4-->
-                        <td id="row12">
-                            <input type="number" name="d3" id="d3" min="1" max="4">
-                            <li> Persuasivo</li>
-                            <li> Contagiante</li>
-                            <li> Estimulador</li>
-                        </td>
-                    </tr>
-                    <!--ROW - 4-->
-                    <tr>
-                        <!--ROW - 1-->
-                        <td id="ro13">
-                            <label for="a4"></label>
-                            <input type="number" name="a4" id="a4" min="1" max="4">
-                            <li> Objetivo</li>
-                            <li> Assertivo</li>
-                            <li> Focado em resultados</li>
-                        </td>
-                        <!--ROW - 2-->
-                        <td id="row14">
-                            <input type="number" name="b4" id="b4" min="1" max="4">
-                            <li> Conforme</li>
-                            <li> Sistemático</li>
-                            <li> Sensato</li>
-                        </td>
-                        <!--ROW - 3-->
-                        <td id="row15">
-                            <input type="number" name="c4" id="c4" min="1" max="4">
-                            <li> Conciliador</li>
-                            <li> Conselheiro</li>
-                            <li> Bom ouvinte</li>
-                        </td>
-                        <!--ROW - 4-->
-                        <td id="row16">
-                            <input type="number" name="d4" id="d4" min="1" max="4">
-                            <li> Preza pelo Prazer</li>
-                            <li> Emotivo</li>
-                            <li> Divertido</li>
-                        </td>
-                    </tr>
-                    <!--ROW - 5-->
-                    <tr>
-                        <!--ROW - 1-->
-                        <td id="row17">
-                            <input type="number" name="a5" id="a5" min="1" max="4">
-                            <li> Determinado</li>
-                            <li> Firme</li>
-                            <li> Enérgico</li>
-                        </td>
-                        <!--ROW - 2-->
-                        <td id="row18">
-                            <input type="number" name="b5" id="b5" min="1" max="4">
-                            <li> Preciso</li>
-                            <li> Lógico</li>
-                            <li> Racional</li>
-                        </td>
-                        <!--ROW - 3-->
-                        <td>
-                            <input type="number" name="c5" id="c5" min="1" max="4">
-                            <li> Comedido</li>
-                            <li> Amável</li>
-                            <li> Mediador</li>
-                        </td>
-                        <!--ROW - 4-->
-                        <td>
-                            <input type="number" name="d5" id="d5" min="1" max="4">
-                            <li> Criativo</li>
-                            <li> Falante</li>
-                            <li> Distraído</li>
-                        </td>
-                    </tr>
-                    <!--ROW - 6-->
-                    <tr>
-                        <!--ROW - 1-->
-                        <td>
-                            <input type="number" name="a6" id="a6" min="1" max="4">
-                            <li> Lutador</li>
-                            <li> Combativo</li>
-                            <li> Agressivo</li>
-                        </td>
-                        <!--ROW - 2-->
-                        <td>
-                            <input type="number" name="b6" id="b6" min="1" max="4">
-                            <li> Profundo</li>
-                            <li> Perceptivo</li>
-                            <li> Estratégico</li>
-                        </td>
-                        <!--ROW - 3-->
-                        <td>
-                            <input type="number" name="c6" id="c6" min="1" max="4">
-                            <li> Autocontrolador</li>
-                            <li> Conservador</li>
-                            <li> Responsável</li>
-                        </td>
-                        <!--ROW - 4-->
-                        <td>
-                            <input type="number" name="d6" id="d6" min="1" max="4">
-                            <li> Participativo</li>
-                            <li> Facillitador</li>
-                            <li> Influenciador</li>
-                        </td>
-                    </tr>
-                    <!--ROW - 7-->
-                    <tr>
-                        <!--ROW - 1-->
-                        <td>
-                            <input type="number" name="a7" id="a7" min="1" max="4">
-                            <li> Automotivado</li>
-                            <li> Pioneiro</li>
-                            <li> Impusionador</li>
-                        </td>
-                        <!--ROW - 2-->
-                        <td>
-                            <input type="number" name="b7" id="b7" min="1" max="4">
-                            <li> Exato</li>
-                            <li> Exigente</li>
-                            <li> Estruturador</li>
-                        </td>
-                        <!--ROW - 3-->
-                        <td>
-                            <input type="number" name="c7" id="c7" min="1" max="4">
-                            <li> Persistente</li>
-                            <li> Prevenido</li>
-                            <li> Tolerante</li>
-                        </td>
-                        <!--ROW - 4-->
-                        <td>
-                            <input type="number" name="d7" id="d7" min="1" max="4">
-                            <li> Articulador</li>
-                            <li> Empolgante</li>
-                            <li> Motivador</li>
-                        </td>
-                    </tr>
-                    <!--ROW - 8-->
-                    <tr>
-                        <!--ROW - 1-->
-                        <td>
-                            <input type="number" name="a8" id="a8" min="1" max="4">
-                            <li> Resolvedor</li>
-                            <li> Destemido</li>
-                            <li> Desafiador</li>
-                        </td>
-                        <!--ROW - 2-->
-                        <td>
-                            <input type="number" name="b8" id="b8" min="1" max="4">
-                            <li> Ponderado</li>
-                            <li> Ordenador</li>
-                            <li> Analisador</li>
-                        </td>
-                        <!--ROW - 3-->
-                        <td>
-                            <input type="number" name="c8" id="c8" min="1" max="4">
-                            <li> Aconselhador</li>
-                            <li> Harmônico</li>
-                            <li> Apoiador</li>
-                        </td>
-                        <!--ROW - 4-->
-                        <td>
-                            <input type="number" name="d8" id="d8" min="1" max="4">
-                            <li> Vaidoso</li>
-                            <li> Simpático</li>
-                            <li> Gosta de ser reconhecido</li>
-                        </td>
-                    </tr>
-                    <!--ROW - 9-->
-                    <tr>
-                        <!--ROW - 1-->
-                        <td>
-                            <input type="number" name="a9" min="1" max="4">
-                            <li> Competitico</li>
-                            <li> Assume riscos</li>
-                            <li> Desbravador</li>
-                        </td>
-                        <!--ROW - 2-->
-                        <td>
-                            <input type="number" name="b9" min="1" max="4">
-                            <li> Teórico</li>
-                            <li> Conservador</li>
-                            <li> Aprofunda conhecimentos</li>
-                        </td>
-                        <!--ROW - 3-->
-                        <td>
-                            <input type="number" name="c9" min="1" max="4">
-                            <li> Moderado</li>
-                            <li> Equilibrado</li>
-                            <li> Estável</li>
-                        </td>
-                        <!--ROW - 4-->
-                        <td>
-                            <input type="number" name="d9" min="1" max="4">
-                            <li> Entusiamado</li>
-                            <li> Impulsivo</li>
-                            <li> Otimista</li>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input name="result1" id="result1"></td>
-                        <td><input name="result1" id="result1"></td>
-                        <td><input name="result1" id="result1"></td>
-                        <td><input name="result1" id="result1"></td>
-                    </tr>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <img src="LOGO_NOVA_CAIRU.png" class="mb-5" style="width: 250px">
+                    <h2 class="heading-section mt-3">Teste de Perfil Comportamental</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
 
-            </table>
-            <button type="submit" class="btn btn-primary" mt-2>Primary</button>
-        </form>
-    </div>
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="jquery-3.6.0.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    <div class="table-wrap">
+                        <form action="calcular.php" method="post">
+                            <table name="tabela" class="table">
+                                <thead class="thead-primary">
+                                <h4 class="text-center mb-4">Preencha as lacunas abaixo com números de 1 a 4, na HORIZONTAL, sendo:1 o que
+                                    menos se identifica e 4 o que mais se identifica:</h4>
+
+                                </thead>
+                                <tbody>
+                                <div style="text-align: center;">
+                                    <!--ROW - 1-->
+                                    <tr>
+                                        <!--COL - 1-->
+                                        <td id="row1" style="text-align: center" name="row1">
+                                            <input required type="number" class="col1" id="a1" name="a1" min="1" max="4"/>
+                                            <li> Autoconfiante</li>
+                                            <li> Idependente</li>
+                                            <li> Dominante</li>
+                                        </td>
+                                        <!--COL - 2-->
+                                        <td id="row2">
+                                            <input required type="number" name="b1" id="b1" min="1" max="4">
+                                            <li> Autodisciplinado</li>
+                                            <li> Atento à detalhes</li>
+                                            <li> Diligente</li>
+                                        </td>
+                                        <!--COL - 3-->
+                                        <td id="row3">
+                                            <input required type="number" name="c1" id="c1" min="1" max="4">
+                                            <li> Acolhedor</li>
+                                            <li> Amigável</li>
+                                            <li> Paciente</li>
+                                        </td>
+                                        <!--COL - 4-->
+                                        <td id="row4">
+                                            <input required type="number" name="d1" id="d1" min="1" max="4">
+                                            <li> Comunicativo</li>
+                                            <li> Alegre</li>
+                                            <li> Extrovertido</li>
+                                        </td>
+                                    </tr>
+                                    <!--ROW - 2-->
+                                    <tr>
+                                        <!--COL - 1-->
+                                        <td id="row5">
+                                            <input required type="number" class="col1" name="a2" id="a2" min="1" max="4"/>
+                                            <li> Proativo</li>
+                                            <li> Empreededor</li>
+                                            <li> Corajoso</li>
+                                        </td>
+                                        <!--COL - 2-->
+                                        <td id="row6">
+                                            <input required type="number" name="b2" min="1" max="4">
+                                            <li> Criterioso</li>
+                                            <li> Cuidadoso</li>
+                                            <li> Especialista</li>
+                                        </td>
+                                        <!--COL - 3-->
+                                        <td id="row7">
+                                            <input required  type="number" name="c2" min="1" max="4">
+                                            <li> Agradável</li>
+                                            <li> Tranquilo</li>
+                                            <li> Organizado</li>
+                                        </td>
+                                        <!--COL - 4-->
+                                        <td id="row8">
+                                            <input required  type="number" name="d2" min="1" max="4">
+                                            <li> Participativo</li>
+                                            <li> Relacional</li>
+                                            <li> Flexível</li>
+                                        </td>
+                                    </tr>
+                                    <!--ROW - 3-->
+                                    <tr>
+                                        <!--COL - 1-->
+                                        <td id="row9">
+                                            <input required type="number" name="a3" id="a3" min="1" max="4"/>
+                                            <li> Prático</li>
+                                            <li> Rápido</li>
+                                            <li> Eficiente</li>
+                                        </td>
+                                        <!--COL - 2-->
+                                        <td id="row10">
+                                            <input required type="number" name="b3" id="b3" min="1" max="4">
+                                            <li> Idealizador</li>
+                                            <li> Perfeccionista</li>
+                                            <li> Uniforme</li>
+                                        </td>
+                                        <!--COL - 3-->
+                                        <td id="row11">
+                                            <input required type="number" name="c3" id="c3" min="1" max="4">
+                                            <li> Calmo</li>
+                                            <li> Rotineiro</li>
+                                            <li> Constante</li>
+                                        </td>
+                                        <!--COL - 4-->
+                                        <td id="row12">
+                                            <input required type="number" name="d3" id="d3" min="1" max="4">
+                                            <li> Persuasivo</li>
+                                            <li> Contagiante</li>
+                                            <li> Estimulador</li>
+                                        </td>
+                                    </tr>
+                                    <!--ROW - 4-->
+                                    <tr>
+                                        <!--ROW - 1-->
+                                        <td id="ro13">
+                                            <label for="a4"></label>
+                                            <input required type="number" name="a4" id="a4" min="1" max="4"/>
+                                            <li> Objetivo</li>
+                                            <li> Assertivo</li>
+                                            <li> Focado em resultados</li>
+                                        </td>
+                                        <!--ROW - 2-->
+                                        <td id="row14">
+                                            <input required type="number" name="b4" id="b4" min="1" max="4">
+                                            <li> Conforme</li>
+                                            <li> Sistemático</li>
+                                            <li> Sensato</li>
+                                        </td>
+                                        <!--ROW - 3-->
+                                        <td id="row15">
+                                            <input required type="number" name="c4" id="c4" min="1" max="4">
+                                            <li> Conciliador</li>
+                                            <li> Conselheiro</li>
+                                            <li> Bom ouvinte</li>
+                                        </td>
+                                        <!--ROW - 4-->
+                                        <td id="row16">
+                                            <input required type="number" name="d4" id="d4" min="1" max="4">
+                                            <li> Preza pelo Prazer</li>
+                                            <li> Emotivo</li>
+                                            <li> Divertido</li>
+                                        </td>
+                                    </tr>
+                                    <!--ROW - 5-->
+                                    <tr>
+                                        <!--ROW - 1-->
+                                        <td id="row17">
+                                            <input required type="number" name="a5" id="a5" min="1" max="4"/>
+                                            <li> Determinado</li>
+                                            <li> Firme</li>
+                                            <li> Enérgico</li>
+                                        </td>
+                                        <!--ROW - 2-->
+                                        <td id="row18">
+                                            <input required type="number" name="b5" id="b5" min="1" max="4">
+                                            <li> Preciso</li>
+                                            <li> Lógico</li>
+                                            <li> Racional</li>
+                                        </td>
+                                        <!--ROW - 3-->
+                                        <td>
+                                            <input required type="number" name="c5" id="c5" min="1" max="4">
+                                            <li> Comedido</li>
+                                            <li> Amável</li>
+                                            <li> Mediador</li>
+                                        </td>
+                                        <!--ROW - 4-->
+                                        <td>
+                                            <input required type="number" name="d5" id="d5" min="1" max="4">
+                                            <li> Criativo</li>
+                                            <li> Falante</li>
+                                            <li> Distraído</li>
+                                        </td>
+                                    </tr>
+                                    <!--ROW - 6-->
+                                    <tr>
+                                        <!--ROW - 1-->
+                                        <td>
+                                            <input required type="number" name="a6" id="a6" min="1" max="4"/>
+                                            <li> Lutador</li>
+                                            <li> Combativo</li>
+                                            <li> Agressivo</li>
+                                        </td>
+                                        <!--ROW - 2-->
+                                        <td>
+                                            <input required type="number" name="b6" id="b6" min="1" max="4">
+                                            <li> Profundo</li>
+                                            <li> Perceptivo</li>
+                                            <li> Estratégico</li>
+                                        </td>
+                                        <!--ROW - 3-->
+                                        <td>
+                                            <input required type="number" name="c6" id="c6" min="1" max="4">
+                                            <li> Autocontrolador</li>
+                                            <li> Conservador</li>
+                                            <li> Responsável</li>
+                                        </td>
+                                        <!--ROW - 4-->
+                                        <td>
+                                            <input required type="number" name="d6" id="d6" min="1" max="4">
+                                            <li> Participativo</li>
+                                            <li> Facillitador</li>
+                                            <li> Influenciador</li>
+                                        </td>
+                                    </tr>
+                                    <!--ROW - 7-->
+                                    <tr>
+                                        <!--ROW - 1-->
+                                        <td>
+                                            <input required type="number" name="a7" id="a7" min="1" max="4"/>
+                                            <li> Automotivado</li>
+                                            <li> Pioneiro</li>
+                                            <li> Impusionador</li>
+                                        </td>
+                                        <!--ROW - 2-->
+                                        <td>
+                                            <input required type="number" name="b7" id="b7" min="1" max="4">
+                                            <li> Exato</li>
+                                            <li> Exigente</li>
+                                            <li> Estruturador</li>
+                                        </td>
+                                        <!--ROW - 3-->
+                                        <td>
+                                            <input required type="number" name="c7" id="c7" min="1" max="4">
+                                            <li> Persistente</li>
+                                            <li> Prevenido</li>
+                                            <li> Tolerante</li>
+                                        </td>
+                                        <!--ROW - 4-->
+                                        <td>
+                                            <input required type="number" name="d7" id="d7" min="1" max="4">
+                                            <li> Articulador</li>
+                                            <li> Empolgante</li>
+                                            <li> Motivador</li>
+                                        </td>
+                                    </tr>
+                                    <!--ROW - 8-->
+                                    <tr>
+                                        <!--ROW - 1-->
+                                        <td>
+                                            <input required type="number" name="a8" id="a8" min="1" max="4"/>
+                                            <li> Resolvedor</li>
+                                            <li> Destemido</li>
+                                            <li> Desafiador</li>
+                                        </td>
+                                        <!--ROW - 2-->
+                                        <td>
+                                            <input required type="number" name="b8" id="b8" min="1" max="4">
+                                            <li> Ponderado</li>
+                                            <li> Ordenador</li>
+                                            <li> Analisador</li>
+                                        </td>
+                                        <!--ROW - 3-->
+                                        <td>
+                                            <input required type="number" name="c8" id="c8" min="1" max="4">
+                                            <li> Aconselhador</li>
+                                            <li> Harmônico</li>
+                                            <li> Apoiador</li>
+                                        </td>
+                                        <!--ROW - 4-->
+                                        <td>
+                                            <input required type="number" name="d8" id="d8" min="1" max="4">
+                                            <li> Vaidoso</li>
+                                            <li> Simpático</li>
+                                            <li> Gosta de ser reconhecido</li>
+                                        </td>
+                                    </tr>
+                                    <!--ROW - 9-->
+                                    <tr>
+                                        <!--ROW - 1-->
+                                        <td>
+                                            <input required type="number" name="a9" min="1" max="4"/>
+                                            <li> Competitivo</li>
+                                            <li> Assume riscos</li>
+                                            <li> Desbravador</li>
+                                        </td>
+                                        <!--ROW - 2-->
+                                        <td>
+                                            <input required type="number" name="b9" min="1" max="4"/>
+                                            <li> Teórico</li>
+                                            <li> Conservador</li>
+                                            <li> Aprofunda conhecimentos</li>
+                                        </td>
+                                        <!--ROW - 3-->
+                                        <td>
+                                            <input required type="number" name="c9" min="1" max="4"/>
+                                            <li> Moderado</li>
+                                            <li> Equilibrado</li>
+                                            <li> Estável</li>
+                                        </td>
+                                        <!--ROW - 4-->
+                                        <td>
+                                            <input required type="number" name="d9" min="1" max="4"/>
+                                            <li> Entusiamado</li>
+                                            <li> Impulsivo</li>
+                                            <li> Otimista</li>
+                                        </td>
+                                    </tr>
+                                </div>
+                                </tbody>
+                            </table>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary mb-5">Calcular</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="jquery-3.6.0.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
 
-    <!-- JavaScript Bundle with Popper -->
+<!-- JavaScript Bundle with Popper -->
 
 </body>
 
